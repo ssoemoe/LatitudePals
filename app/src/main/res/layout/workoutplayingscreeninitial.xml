@@ -7,7 +7,7 @@
     tools:context=".WorkoutPlayingScreenInitial">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/rootRL"
+        android:id="@+id/playInitBackground"
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
