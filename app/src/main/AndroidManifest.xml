@@ -12,10 +12,58 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ChoosingPartner">
+        </activity>
+        <activity android:name=".Homescreen">
+        </activity>
+        <activity android:name=".PartnerChosen">
+        </activity>
+        <activity android:name=".PartnerChosen1">
+        </activity>
+        <activity android:name=".SharingLocationAskAll">
+        </activity>
+        <activity android:name=".SharingLocationGoScreen">
+        </activity>
+        <activity android:name=".SharingLocationSendAll">
+        </activity>
+        <activity android:name=".SharingLocationWithJen1">
+        </activity>
+        <activity android:name=".SharingLocationWithJen2">
+        </activity>
+        <activity android:name=".SharingLocationWithJen3">
+        </activity>
+        <activity android:name=".SharingLocationWithTim1">
+        </activity>
+        <activity android:name=".SharingLocationWithTim2">
+        </activity>
+        <activity android:name=".SharingLocationWithTim3">
+        </activity>
+        <activity android:name=".Startup">
+        </activity>
+        <activity android:name=".WorkoutDoneScreen">
+        </activity>
+        <activity android:name=".WorkoutPauseScreen">
+        </activity>
+        <activity android:name=".WorkoutPlayingScreen">
+        </activity>
+        <activity android:name=".WorkoutPlayingScreen1">
+        </activity>
+        <activity android:name=".WorkoutPlayingScreenInitial">
+        </activity>
+        <activity android:name=".YourLocation">
+        </activity>
+        <activity android:name=".ReactTim">
+        </activity>
+        <activity android:name=".ReactJen">
+        </activity>
+        <activity android:name=".ReactShane">
+        </activity>
+        <activity android:name=".ViewBuddyStats">
+        </activity>
+
     </application>
 
 </manifest>
