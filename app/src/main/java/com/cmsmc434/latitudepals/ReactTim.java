@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class SharingLocationGoScreen extends AppCompatActivity {
+public class ReactTim extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sharelocationgoscreen);
+        setContentView(R.layout.reacttim);
     }
 }
