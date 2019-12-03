@@ -4,15 +4,99 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SharingLocationGoScreen">
+    tools:context=".SharingLocationGoScreen"
+    android:background="@drawable/sharinglocationgoscreen"
+    >
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/sharegoBackground"
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/sharinglocationgoscreen">
-    </RelativeLayout>
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/sharegoBackground"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:background="@drawable/sharinglocationgoscreen"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="162dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="490dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="169dp"
+        android:onClick="Send"
+        android:alpha="0.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="156dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="488dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:onClick="Ask"
+        android:text=""
+        android:alpha="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="80dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="331dp"
+        android:layout_marginRight="331dp"
+        android:layout_marginBottom="361dp"
+        android:alpha="0.0"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="84dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="219dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginRight="184dp"
+        android:alpha="0.0"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="126dp"
+        android:alpha="0.0"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="142dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:onClick="Back1"
+        android:text=""
+        android:alpha="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+    <!--    </RelativeLayout>-->
 
 
 

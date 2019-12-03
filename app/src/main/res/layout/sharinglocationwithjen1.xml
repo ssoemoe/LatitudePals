@@ -4,16 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SharingLocationWithJen1">
+    tools:context=".SharingLocationWithJen1"
+    android:background="@drawable/sharinglocationwithjen1">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/shareJen1Background"
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/sharinglocationwithjen1">
-    </RelativeLayout>
+<!--    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:id="@+id/shareJen1Background"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:background="@drawable/sharinglocationwithjen1">-->
+<!--    </RelativeLayout>-->
 
 
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="142dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="BackJen"
+        android:text=""
+        android:alpha="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
 
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="123dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="528dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:onClick="SendJen"
+        android:text=""
+        android:alpha="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="123dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="169dp"
+        android:layout_marginEnd="261dp"
+        android:layout_marginRight="261dp"
+        android:onClick="AskJen"
+        android:text=""
+        android:alpha="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

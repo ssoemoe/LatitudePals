@@ -4,16 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SharingLocationWithTim1">
+    tools:context=".SharingLocationWithTim1"
+    android:background="@drawable/sharinglocationwithtim1">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/shareTim1Background"
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/sharinglocationwithtim1">
-    </RelativeLayout>
+<!--    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:id="@+id/shareTim1Background"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:background="@drawable/sharinglocationwithtim1">-->
+<!--    </RelativeLayout>-->
 
 
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="123dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="528dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:onClick="SendTim"
+        android:text=""
+        android:alpha="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="123dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="169dp"
+        android:layout_marginEnd="261dp"
+        android:layout_marginRight="261dp"
+        android:onClick="AskTim"
+        android:text=""
+        android:alpha="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="142dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="BackTim"
+        android:text=""
+        android:alpha="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

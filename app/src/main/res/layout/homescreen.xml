@@ -4,16 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Homescreen">
+    tools:context=".Homescreen"
+    android:background="@drawable/homescreen">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/homeBackground"
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/homescreen">
-    </RelativeLayout>
+<!--    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:id="@+id/homeBackground"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:background="@drawable/homescreen">-->
+<!--    </RelativeLayout>-->
 
 
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="402dp"
+        android:layout_height="261dp"
+        android:layout_marginTop="470dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:alpha="0.0"
+        android:onClick="goToGPS"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
