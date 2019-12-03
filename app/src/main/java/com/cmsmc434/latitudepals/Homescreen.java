@@ -14,12 +14,4 @@ public class Homescreen extends AppCompatActivity {
         setContentView(R.layout.homescreen);
 
     }
-    //goes to share location
-    public void goToGPS(View view){
-        Intent intent= new Intent(this, SharingLocationGoScreen.class);
-        startActivity(intent);
-    }
-
-
-
 }
