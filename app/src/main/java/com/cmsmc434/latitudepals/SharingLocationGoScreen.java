@@ -46,7 +46,7 @@ public class SharingLocationGoScreen extends AppCompatActivity {
     }
 
     public void Back1(View view) {
-        Intent intent= new Intent(this, Homescreen.class);
+        Intent intent= new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

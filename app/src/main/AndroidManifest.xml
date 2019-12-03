@@ -17,8 +17,6 @@
         </activity>
         <activity android:name=".ChoosingPartner">
         </activity>
-        <activity android:name=".Homescreen">
-        </activity>
         <activity android:name=".PartnerChosen">
         </activity>
         <activity android:name=".PartnerChosen1">
