@@ -1,5 +1,6 @@
 # Latitude Pals (CMSC 434 Project)
 **Team name:** Working Out Together Long Distance
+
 **Team members:** Ingride Ngaku, Logan Harris, Sanjana Chowdhury, Shane Moe
 
 Idea Credit to **Sanjana Chowdhury**
