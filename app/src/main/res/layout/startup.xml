@@ -6,14 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".Startup">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="262dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="540dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="goToHomescreen"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible" />
+
+    <RelativeLayout
         android:id="@+id/startupBackground"
-        android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@drawable/startup">
-    </RelativeLayout>
+        android:background="@drawable/startup"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

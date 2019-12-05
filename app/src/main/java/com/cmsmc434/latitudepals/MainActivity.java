@@ -21,4 +21,16 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //goes to feed
+    public void goToFeed(View view){
+        Intent intent= new Intent(this, Feed.class);
+        startActivity(intent);
+    }
+
+    //goes to recording a workout
+    public void goToWorkout(View view){
+        Intent intent= new Intent(this, ChoosingPartner.class);
+        startActivity(intent);
+    }
+
 }

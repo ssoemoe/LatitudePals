@@ -17,16 +17,42 @@
 
 
     <Button
+        android:id="@+id/button15"
+        android:layout_width="205dp"
+        android:layout_height="375dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:onClick="goToFeed"
+        app:layout_constraintBottom_toTopOf="@+id/button13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button14"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="invisible" />
+
+    <Button
         android:id="@+id/button13"
-        android:layout_width="402dp"
-        android:layout_height="261dp"
-        android:layout_marginTop="470dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginRight="6dp"
+        android:layout_width="411dp"
+        android:layout_height="346dp"
         android:alpha="0.0"
         android:onClick="goToGPS"
         android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button15" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="205dp"
+        android:layout_height="375dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:onClick="goToWorkout"
+        app:layout_constraintBottom_toTopOf="@+id/button13"
+        app:layout_constraintEnd_toStartOf="@+id/button15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
