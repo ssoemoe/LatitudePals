@@ -6,12 +6,55 @@
     android:layout_height="match_parent"
     tools:context=".ReactShane">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="sendReaction"
+        android:text="Send your reaction"
+        app:layout_constraintEnd_toEndOf="@+id/rsBackground"
+        app:layout_constraintStart_toStartOf="@+id/rsBackground"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:clickable="true"
+        android:cursorVisible="true"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:shadowColor="#00CF1515"
+        android:text="Enter Reaction Here"
+        app:layout_constraintBottom_toBottomOf="@+id/rsBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="107dp"
+        android:layout_height="91dp"
+        android:onClick="goToHomescreen"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
         android:id="@+id/rsBackground"
-        android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@drawable/reactshane">
+        android:background="@drawable/reacttoshane"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
     </RelativeLayout>
 
 
