@@ -15,6 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Feed">
+        </activity>
         <activity android:name=".ChoosingPartner">
         </activity>
         <activity android:name=".PartnerChosen">
