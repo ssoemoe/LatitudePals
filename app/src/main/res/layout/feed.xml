@@ -6,6 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".Feed">
 
+    <RelativeLayout
+        android:id="@+id/feedBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/feed"
+        android:onClick="goToJen"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="408dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="470dp"
+        android:alpha="0.0"
+        android:onClick="goToShane"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/feedBackground"
+        app:layout_constraintStart_toStartOf="@+id/feedBackground"
+        app:layout_constraintTop_toTopOf="@+id/feedBackground" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="383dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.0"
+        android:onClick="goToTim"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/feedBackground"
+        app:layout_constraintStart_toStartOf="@+id/feedBackground"
+        app:layout_constraintTop_toBottomOf="@+id/button17" />
+
     <Button
         android:id="@+id/button17"
         android:layout_width="383dp"
@@ -26,45 +64,6 @@
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button18" />
-
-    <Button
-        android:id="@+id/button18"
-        android:layout_width="383dp"
-        android:layout_height="217dp"
-        android:layout_marginTop="5dp"
-        android:alpha="0.0"
-        android:onClick="goToTim"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="@+id/feedBackground"
-        app:layout_constraintStart_toStartOf="@+id/feedBackground"
-        app:layout_constraintTop_toBottomOf="@+id/button17" />
-
-    <Button
-        android:id="@+id/button19"
-        android:layout_width="408dp"
-        android:layout_height="196dp"
-        android:layout_marginTop="470dp"
-        android:alpha="0.0"
-        android:onClick="goToShane"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="@+id/feedBackground"
-        app:layout_constraintStart_toStartOf="@+id/feedBackground"
-        app:layout_constraintTop_toTopOf="@+id/feedBackground" />
-
-    <RelativeLayout
-        android:id="@+id/feedBackground"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/feed"
-        android:onClick="goToJen"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </RelativeLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
