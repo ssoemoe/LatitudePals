@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -49,6 +50,14 @@ public class ChoosingPartner extends AppCompatActivity {
         InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(partnerEditText.getWindowToken(),
                 InputMethodManager.RESULT_UNCHANGED_SHOWN);
+
+        // custom toast
+        String[] splitPartnerName = partner.split(" ");
+        String justName = splitPartnerName[0] + " " + splitPartnerName[1];
+        Toast toast = Toast.makeText(this, justName + " successfully invited!", Toast.LENGTH_LONG);
+        View toastView = toast.getView();
+        toastView.setBackgroundColor(Color.GREEN);
+        toast.show();
     }
 
     public void goToHomeScreen(View view) {
