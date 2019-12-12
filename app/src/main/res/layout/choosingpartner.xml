@@ -6,14 +6,118 @@
     android:layout_height="match_parent"
     tools:context=".ChoosingPartner">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/cpBackground"
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/choosingpartner">
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/searchPartnerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invite your partner(s):"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/choosingPartnerAddBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.855" />
 
+    <AutoCompleteTextView
+        android:id="@+id/partnerNameInput"
+        android:layout_width="309dp"
+        android:layout_height="67dp"
+        android:layout_margin="1sp"
+        android:layout_marginLeft="1sp"
+        android:layout_marginTop="1sp"
+        android:layout_marginRight="1sp"
+        android:layout_marginBottom="1sp"
+        android:height="20sp"
+        android:textSize="20sp"
+        android:imeOptions="actionDone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/choosingPartnerAddBtn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchPartnerTextView"
+        app:layout_constraintVertical_bias="0.004" />
 
+    <Button
+        android:id="@+id/choosingPartnerAddBtn"
+        android:layout_width="75dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="addPartner"
+        android:text="Add"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.303" />
+
+    <TextView
+        android:id="@+id/buddiesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WORKOUT BUDDIES"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/partnerNameInput"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <TextView
+        android:id="@+id/TimChenTextView"
+        android:layout_width="280dp"
+        android:layout_height="36dp"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buddiesTitle"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="282dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TimChenTextView">
+
+        <Button
+            android:id="@+id/choosingPartnerStartBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="goToWorkoutScreen"
+            android:text="Start"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.871"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.741" />
+
+        <Button
+            android:id="@+id/choosingPartnerBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="goToHomeScreen"
+            android:text="Back"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/choosingPartnerStartBtn"
+            app:layout_constraintHorizontal_bias="0.38"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.754" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
