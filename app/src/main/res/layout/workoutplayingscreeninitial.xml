@@ -10,7 +10,9 @@
         android:id="@+id/pauseDisplay"
         android:layout_width="408dp"
         android:layout_height="313dp"
-        android:visibility="visible"
+        android:clickable="false"
+        android:onClick="resume"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/otherWorkoutComponents"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,7 +23,7 @@
         android:id="@+id/otherWorkoutComponents"
         android:layout_width="401dp"
         android:layout_height="598dp"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.461"
@@ -30,11 +32,12 @@
         app:layout_constraintVertical_bias="1.0">
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/pauseImage"
             android:layout_width="60dp"
             android:layout_height="59dp"
+            android:onClick="pause"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+            app:layout_constraintEnd_toStartOf="@+id/stopImage"
             app:layout_constraintHorizontal_bias="0.586"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView13"
@@ -42,14 +45,15 @@
             app:srcCompat="@drawable/pause" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/stopImage"
             android:layout_width="73dp"
             android:layout_height="55dp"
+            android:onClick="stop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.723"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/timDistance"
             app:layout_constraintVertical_bias="0.479"
             app:srcCompat="@drawable/stop" />
 
@@ -76,7 +80,7 @@
             android:textColor="@android:color/black"
             android:textSize="25sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintBottom_toTopOf="@+id/yourTimer"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -90,7 +94,7 @@
             android:text="You"
             android:textColor="@android:color/black"
             android:textSize="20sp"
-            app:layout_constraintEnd_toStartOf="@+id/textView4"
+            app:layout_constraintEnd_toStartOf="@+id/yourTimer"
             app:layout_constraintHorizontal_bias="0.907"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -103,8 +107,8 @@
             android:textColor="@android:color/black"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView14"
-            app:layout_constraintHorizontal_bias="0.841"
+            app:layout_constraintEnd_toStartOf="@+id/yourDistance"
+            app:layout_constraintHorizontal_bias="0.851"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView4"
             app:layout_constraintVertical_bias="0.079" />
@@ -164,7 +168,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/yourTimer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="116dp"
@@ -180,7 +184,7 @@
             app:layout_constraintVertical_bias="0.487" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/timTimer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="116dp"
@@ -192,7 +196,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/textView3"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/yourTimer"
             app:layout_constraintVertical_bias="0.277" />
 
         <ImageView
@@ -215,7 +219,7 @@
             android:textColor="@android:color/black"
             android:textSize="25sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintBottom_toTopOf="@+id/yourBPM"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.086"
             app:layout_constraintStart_toEndOf="@+id/imageView3"
@@ -230,14 +234,14 @@
             android:textColor="@android:color/black"
             android:textSize="25sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/textView14"
+            app:layout_constraintBottom_toTopOf="@+id/yourDistance"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.136"
             app:layout_constraintStart_toEndOf="@+id/imageView4"
-            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+            app:layout_constraintTop_toBottomOf="@+id/timBPM" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/yourBPM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="65 BPM"
@@ -251,26 +255,26 @@
             app:layout_constraintVertical_bias="0.16" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/yourDistance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="140dp"
-            android:layout_marginRight="140dp"
+            android:layout_marginEnd="164dp"
+            android:layout_marginRight="164dp"
             android:layout_marginBottom="16dp"
-            android:text="0.01 mi"
+            android:text="0 mi"
             android:textColor="@android:color/black"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/textView15"
+            app:layout_constraintBottom_toTopOf="@+id/timDistance"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/timDistance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0.00 mi"
+            android:text="0 mi"
             android:textColor="@android:color/black"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/imageView7"
+            app:layout_constraintBottom_toTopOf="@+id/pauseImage"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.129"
             app:layout_constraintStart_toEndOf="@+id/textView13"
@@ -278,17 +282,17 @@
             app:layout_constraintVertical_bias="0.717" />
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/timBPM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="65 BPM"
+            android:text="0 BPM"
             android:textColor="@android:color/black"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.162"
             app:layout_constraintStart_toEndOf="@+id/textView8"
-            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+            app:layout_constraintTop_toBottomOf="@+id/yourBPM" />
 
         <ImageView
             android:id="@+id/imageView4"

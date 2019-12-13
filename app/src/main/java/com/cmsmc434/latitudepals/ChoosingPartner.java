@@ -54,7 +54,7 @@ public class ChoosingPartner extends AppCompatActivity {
         // custom toast
         String[] splitPartnerName = partner.split(" ");
         String justName = splitPartnerName[0] + " " + splitPartnerName[1];
-        Toast toast = Toast.makeText(this, justName + " successfully invited!", Toast.LENGTH_LONG);
+        Toast toast = Toast.makeText(this, justName + " successfully invited!", Toast.LENGTH_SHORT);
         View toastView = toast.getView();
         toastView.setBackgroundColor(Color.GREEN);
         toast.show();
@@ -66,7 +66,7 @@ public class ChoosingPartner extends AppCompatActivity {
     }
 
     public void goToWorkoutScreen(View view) {
-        Intent intent= new Intent(this, WorkoutPlayingScreenInitial.class);
+        Intent intent= new Intent(this, WorkoutPlayingScreen.class);
         startActivity(intent);
     }
 
