@@ -6,14 +6,67 @@
     android:layout_height="match_parent"
     tools:context=".WorkoutDoneScreen">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/doneBackground"
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/workoutdonescreen">
-    </RelativeLayout>
+    <Button
+        android:id="@+id/viewBuddyStatBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:background="#19CABE"
+        android:onClick="goToBuddyStats"
+        android:padding="5sp"
+        android:text="View Buddies' Stats"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/viewBuddyStatBtn2"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/viewBuddyStatBtn2"
+        android:layout_width="98dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="52dp"
+        android:background="#19CABE"
+        android:onClick="goToHome"
+        android:padding="1sp"
+        android:paddingLeft="3sp"
+        android:paddingTop="1sp"
+        android:paddingRight="3sp"
+        android:paddingBottom="1sp"
+        android:text="Home"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="252dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/congrats" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#19CABE"
+        android:padding="5sp"
+        android:text="Total Time"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.509" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
